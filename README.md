@@ -3,29 +3,29 @@
 # Unstaging a Staged File
 
 ## Reset  
-    -git reset <files>
+- git reset <files>
 
 ## Amend
-    -git commit --amnend
-        -Used for 
-        -to change your latest log message
-        -to make modifications to the most recent commit
-        -Use git rebase to combine commits and modify history of a branch.
+- git commit --amnend
+         - Used for 
+         - to change your latest log message
+            - to make modifications to the most recent commit
+            - Use git rebase to combine commits and modify history of a branch.
 
 ## Undo Commit
-    ``` sh
+``` sh
     $ git revert<commit>
     $ git checkout<file|commit>
     $ git reset
     $ git reset --soft<commit>
     $ git reset --hard<commit>
-    ```
-    -<commit>:
-    -SHA1
-    -Head^,Head@{number}
+```
+    - <commit>:
+        - SHA1
+        - Head^,Head@{number}
 
 ## Remote Repositories
-    - #### Clone a Repository
+- #### Clone a Repository
         -git clone<URL>
         -https://github.com/
         -git://github.com/koke/grit.git
@@ -34,66 +34,66 @@
         -file:///srv/git/project.git
 
 ## Showing Your Remotes
-    ``` sh
+``` sh
     $ git remote
     $ git remote -v
-    ```
+ ```
 ## Add Remotes
-    ``` sh
+ ``` sh
     $ git remote add <Name> <URL>
-    ```
+ ```
 
 ## Fetching and Pulling Repositories 
-    ``` sh
+``` sh
     $ git fetch <remote>
     $ git pull <remote> <branch>
-    ```
+ ```
 ## Pushing into Repositories
-    ``` sh
-    $ git push <remote> <branch>
-    ```
+``` sh
+$ git push <remote> <branch>
+ ```
 ## Branching
-    - #### List branches
+- #### List branches
         ``` sh
      $ git branch
      $ git branch -a
         ```
-    - #### Create new branch
+- #### Create new branch
         ``` sh
         $ git branch <new name>
         ```
-    - #### Switch branches
+- #### Switch branches
         ``` sh
         $ git Checkout <branch name>
         ```
-    - #### Delete Branches
+- #### Delete Branches
         ``` sh
         $ git branch -d <branches>
         ```
 
 ## Creating a New Branch 
 
-    - ##### git branch testing
+- ##### git branch testing
 ![N|Solid](./Branching.png)
     
-    - #### switching Branch 
+- #### switching Branch 
             - “git checkout testing”
 ![N|Solid](./Switching.png)
     
-    - #### Commiting in a New Branch
+- #### Commiting in a New Branch
 ![N|Solid](./Commiting.png)
     
-    - #### Return to master Branch   
+- #### Return to master Branch   
 ![N|Solid](./Return.png)
  
-    - #### Commiting again Branch
+- #### Commiting again Branch
  ![N|Solid](./Commiting_agin.png)
 
 ## Merging Branching
-        - Fast-forward
-        - Recursive “Three Way merge”
-        - git mergetool
-            - meld
+- Fast-forward
+- Recursive “Three Way merge”
+- git mergetool
+     - meld
 
 ## Remote Branches
      
@@ -102,17 +102,16 @@
                 ![N|Solid](./Remote_br3.png)
 
 ## Local Git Repositories 
-        - #### $ git daemon
-         -- base-path=<path> 
-            -- export-all 
-            -- reuseaddr 
-            -- informative-errors 
-            -- verbose
-            -- enable=receive-pack
-            -- You can use aliases
+- #### $ git daemon
+        - base-path=<path> 
+        - export-all 
+        - reuseaddr 
+        - informative-errors 
+        - verbose
+        - enable=receive-pack
+        - You can use aliases
 
 ## git aliases
-    
     - git  config --global alias.<name> ‘commands’
             - git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose'
            
