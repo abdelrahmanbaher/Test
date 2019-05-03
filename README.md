@@ -13,7 +13,7 @@
         -Use git rebase to combine commits and modify history of a branch.
 
 ## Undo Commit
-    ```sh
+    ``` sh
     $ git revert<commit>
     $ git checkout<file|commit>
     $ git reset
@@ -25,7 +25,7 @@
     -Head^,Head@{number}
 
 ## Remote Repositories
-    ###Clone a Repository
+    #### Clone a Repository
         -git clone<URL>
         -https://github.com/
         -git://github.com/koke/grit.git
@@ -34,57 +34,57 @@
         -file:///srv/git/project.git
 
 ## Showing Your Remotes
-    ```sh
+    ``` sh
     $ git remote
     $ git remote -v
     ```
 ## Add Remotes
-    ```sh
+    ``` sh
     $ git remote add <Name> <URL>
     ```
 
 ## Fetching and Pulling Repositories 
-    ```sh
+    ``` sh
     $ git fetch <remote>
     $ git pull <remote> <branch>
     ```
 ## Pushing into Repositories
-    ```sh
+    ``` sh
     $ git push <remote> <branch>
     ```
 ## Branching
-    -###List branches
-    ```sh
+    -#### List branches
+    ``` sh
     $ git branch
     $ git branch -a
     ```
-    -###Create new branch
-    ```sh
+    -#### Create new branch
+    ``` sh
      $ git branch <new name>
     ```
-    -###Switch branches
-    ```sh
+    -#### Switch branches
+    ``` sh
      $ git Checkout <branch name>
     ```
-    -###Delete Branches
-    ```sh
+    -#### Delete Branches
+    ``` sh
     $ git branch -d <branches>
     ```
 
 ## Creating a New Branch 
 
-    -#### git branch testing
-            ![N|Solid](./Branching.png)
+    -##### git branch testing
+![N|Solid](./Branching.png)
     
-    -###switching Branch 
+    -#### switching Branch 
             -“git checkout testing”
-                ![N|Solid](./Switching.png)
-    -###Commiting in a New Branch
-         ![N|Solid](./Commiting.png)
-    -###Return to master Branch
-        ![N|Solid](./Return.png)
-    -###Commiting again Branch
-        ![N|Solid](./Commiting_agin.png)
+![N|Solid](./Switching.png)
+    -#### Commiting in a New Branch
+![N|Solid](./Commiting.png)
+    -#### Return to master Branch   
+![N|Solid](./Return.png)
+    -#### Commiting again Branch
+ ![N|Solid](./Commiting_agin.png)
 
 ## Merging Branching
         -Fast-forward
@@ -94,32 +94,33 @@
 
 ## Remote Branches
      
-     ![N|Solid](./Remote_br.png)
+![N|Solid](./Remote_br.png)
           ![N|Solid](./Remote_br2.png)
                 ![N|Solid](./Remote_br3.png)
 
 ## Local Git Repositories 
-        -###$ git daemon
-        --base-path=<path> 
-        --export-all 
-        --reuseaddr 
-        --informative-errors 
-        --verbose
-        --enable=receive-pack
-        You can use aliases
+        -#### $ git daemon
+         --base-path=<path> 
+            --export-all 
+            --reuseaddr 
+            --informative-errors 
+            --verbose
+            --enable=receive-pack
+            You can use aliases
 
 ## git aliases
     
     1-git  config --global alias.<name> ‘commands’
-        -git config --global alias.serve '!git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose'
-        -git config --global alias.hub '!git daemon --base-path=. --export-all --enable=receive-pack --reuseaddr --informative-errors --verbose'
+            -git config --global alias.serve '!git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose'
+            -git config --global alias.hub '!git daemon --base-path=. --export-all --enable=receive-pack --reuseaddr --informative-errors --verbose'
     
-    2-git hub or git serve
+     2-git hub or git serve
 
 ## Resources
-    1-[`Pro GIt`](https://github.com/github/gitignore)
-    2-[`git daemon`](https://railsware.com/blog/2013/09/19/taming-the-git-daemon-to-quickly-share-git-repository/)
-    3-[`rest vs checkout vs revert`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+
+-[`Pro GIt`](https://github.com/github/gitignore)
+    -[`git daemon`](https://railsware.com/blog/2013/09/19/taming-the-git-daemon-to-quickly-share-git-repository/)
+    -[`rest vs checkout vs revert`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 
 
 # Thank You
