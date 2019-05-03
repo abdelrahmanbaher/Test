@@ -25,7 +25,7 @@
     -Head^,Head@{number}
 
 ## Remote Repositories
-    #### Clone a Repository
+    - #### Clone a Repository
         -git clone<URL>
         -https://github.com/
         -git://github.com/koke/grit.git
@@ -53,44 +53,47 @@
     $ git push <remote> <branch>
     ```
 ## Branching
-    -#### List branches
-    ``` sh
-    $ git branch
-    $ git branch -a
-    ```
-    -#### Create new branch
-    ``` sh
-     $ git branch <new name>
-    ```
-    -#### Switch branches
-    ``` sh
-     $ git Checkout <branch name>
-    ```
-    -#### Delete Branches
-    ``` sh
-    $ git branch -d <branches>
-    ```
+    - #### List branches
+        ``` sh
+     $ git branch
+     $ git branch -a
+        ```
+    - #### Create new branch
+        ``` sh
+        $ git branch <new name>
+        ```
+    - #### Switch branches
+        ``` sh
+        $ git Checkout <branch name>
+        ```
+    - #### Delete Branches
+        ``` sh
+        $ git branch -d <branches>
+        ```
 
 ## Creating a New Branch 
 
-    -##### git branch testing
+    - ##### git branch testing
 ![N|Solid](./Branching.png)
     
-    -#### switching Branch 
-            -“git checkout testing”
+    - #### switching Branch 
+            - “git checkout testing”
 ![N|Solid](./Switching.png)
-    -#### Commiting in a New Branch
+    
+    - #### Commiting in a New Branch
 ![N|Solid](./Commiting.png)
-    -#### Return to master Branch   
+    
+    - #### Return to master Branch   
 ![N|Solid](./Return.png)
-    -#### Commiting again Branch
+ 
+    - #### Commiting again Branch
  ![N|Solid](./Commiting_agin.png)
 
 ## Merging Branching
-        -Fast-forward
-        -Recursive “Three Way merge”
-        -git mergetool
-            -meld
+        - Fast-forward
+        - Recursive “Three Way merge”
+        - git mergetool
+            - meld
 
 ## Remote Branches
      
@@ -99,28 +102,29 @@
                 ![N|Solid](./Remote_br3.png)
 
 ## Local Git Repositories 
-        -#### $ git daemon
-         --base-path=<path> 
-            --export-all 
-            --reuseaddr 
-            --informative-errors 
-            --verbose
-            --enable=receive-pack
-            You can use aliases
+        - #### $ git daemon
+         -- base-path=<path> 
+            -- export-all 
+            -- reuseaddr 
+            -- informative-errors 
+            -- verbose
+            -- enable=receive-pack
+            -- You can use aliases
 
 ## git aliases
     
-    1-git  config --global alias.<name> ‘commands’
-            -git config --global alias.serve '!git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose'
-            -git config --global alias.hub '!git daemon --base-path=. --export-all --enable=receive-pack --reuseaddr --informative-errors --verbose'
-    
-     2-git hub or git serve
+    - git  config --global alias.<name> ‘commands’
+            - git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose'
+           
+     - git hub or git serve
 
 ## Resources
 
--[`Pro GIt`](https://github.com/github/gitignore)
-    -[`git daemon`](https://railsware.com/blog/2013/09/19/taming-the-git-daemon-to-quickly-share-git-repository/)
-    -[`rest vs checkout vs revert`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+- [`Pro GIt`](https://github.com/github/gitignore)
+    
+    - [`git daemon`](https://railsware.com/blog/2013/09/19/taming-the-git-daemon-to-quickly-share-git-repository/)
+    
+    - [`rest vs checkout vs revert`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 
 
 # Thank You
